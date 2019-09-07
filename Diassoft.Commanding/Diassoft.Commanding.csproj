@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Olavo Henrique Dias</Authors>
+    <Company>http://www.diassoft.com</Company>
+    <Product>Diassoft Commanding</Product>
+    <Description>Provides a way to implement commands by decorating methods with attributes. This component provides a Network Command Listener to intercept network commands from connections such as Telnet.</Description>
+    <Copyright>© 2019 Diassoft Corporation</Copyright>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/diassoft/Commanding/master/LICENSE.MD</PackageLicenseUrl>
+    <PackageIconUrl>https://github.com/diassoft/Branding/blob/master/Nuget-Package-Icon-v01.png?raw=true</PackageIconUrl>
+    <RepositoryUrl>https://github.com/diassoft/Commanding</RepositoryUrl>
+    <RepositoryType>Public</RepositoryType>
+    <PackageTags>Diassoft Command Line Commanding Network Communication TCP IP</PackageTags>
+    <PackageReleaseNotes>Initial release of the Diassoft Commanding component</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\Diassoft.Commanding.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>
