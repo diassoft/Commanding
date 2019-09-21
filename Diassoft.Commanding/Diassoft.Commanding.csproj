@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net45;net451;net452;net46;net461;netcoreapp2.0;</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Olavo Henrique Dias</Authors>
     <Company>http://www.diassoft.com</Company>
@@ -13,11 +13,17 @@
     <RepositoryUrl>https://github.com/diassoft/Commanding</RepositoryUrl>
     <RepositoryType>Public</RepositoryType>
     <PackageTags>Diassoft Command Line Commanding Network Communication TCP IP</PackageTags>
-    <PackageReleaseNotes>Initial release of the Diassoft Commanding component</PackageReleaseNotes>
+    <PackageReleaseNotes>This release is compatible with more frameworks</PackageReleaseNotes>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\Debug\netstandard2.0\Diassoft.Commanding.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+    <OutputPath></OutputPath>
   </PropertyGroup>
 
 </Project>
